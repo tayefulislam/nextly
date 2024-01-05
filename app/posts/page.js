@@ -8,9 +8,9 @@ export default async function AllPosts() {
   return (
     <div>
       {allPost.map((post) => (
-        <div key={post?._id}>
+        <div key={post?.id}>
           <h1>
-            <Link href={`/posts/${post?._id}`}> {post?.title}</Link>
+            <Link href={`/posts/${post?.id}`}> {post?.title}</Link>
           </h1>
         </div>
       ))}
